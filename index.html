@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abhi Harsh — Personal Profile</title>
+
+<style>
+:root{
+  --green:#2f6f4e;
+  --soft:#f4f7f4;
+  --dark:#1f2a24;
+  --muted:#6b7b73;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: "Inter", "Segoe UI", sans-serif;
+}
+
+body{
+  background:linear-gradient(180deg,#eef4ef,#ffffff);
+  color:var(--dark);
+}
+
+/* ---------- HERO ---------- */
+.hero{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:30px;
+  padding:60px 8%;
+  align-items:center;
+}
+
+.hero img{
+  width:100%;
+  border-radius:24px;
+  box-shadow:0 20px 50px rgba(0,0,0,.15);
+}
+
+.hero h1{
+  font-size:52px;
+  color:var(--green);
+}
+
+.hero p{
+  margin-top:20px;
+  font-size:18px;
+  color:var(--muted);
+  line-height:1.7;
+}
+
+.tags{
+  margin-top:30px;
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
+}
+
+.tag{
+  padding:10px 16px;
+  background:#e6f0ea;
+  color:var(--green);
+  border-radius:999px;
+  font-size:14px;
+  font-weight:600;
+}
+
+/* ---------- SECTION ---------- */
+.section{
+  padding:70px 8%;
+}
+
+.section h2{
+  font-size:38px;
+  color:var(--green);
+  margin-bottom:20px;
+}
+
+.section p{
+  max-width:800px;
+  font-size:18px;
+  line-height:1.8;
+  color:#3b4a43;
+}
+
+/* ---------- IMAGE GRID ---------- */
+.grid{
+  margin-top:40px;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  gap:24px;
+}
+
+.grid img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  border-radius:20px;
+  transition:.3s ease;
+}
+
+.grid img:hover{
+  transform:scale(1.03);
+}
+
+/* ---------- VALUES ---------- */
+.values{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:30px;
+  margin-top:40px;
+}
+
+.value{
+  background:#ffffff;
+  border-radius:24px;
+  padding:30px;
+  box-shadow:0 15px 40px rgba(0,0,0,.08);
+}
+
+.value h3{
+  color:var(--green);
+  margin-bottom:10px;
+}
+
+/* ---------- FOOTER ---------- */
+.footer{
+  padding:50px 8%;
+  text-align:center;
+  color:var(--muted);
+  font-size:16px;
+}
+
+/* ---------- MOBILE ---------- */
+@media(max-width:900px){
+  .hero{
+    grid-template-columns:1fr;
+    text-align:center;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <div>
+    <h1>Abhi Harsh</h1>
+    <p>
+      23 · Delhi  
+      <br><br>
+      Calm by nature. Quietly intense.  
+      I don’t chase attention — I build connection.
+      Slowly. Honestly. Intentionally.
+    </p>
+
+    <div class="tags">
+      <div class="tag">Emotionally Aware</div>
+      <div class="tag">Growth-Oriented</div>
+      <div class="tag">Curious Mind</div>
+      <div class="tag">Grounded</div>
+      <div class="tag">Loyal</div>
+    </div>
+  </div>
+
+  <img src="images/hero.jpg" alt="Abhi Harsh">
+</section>
+
+<!-- STORY -->
+<section class="section">
+  <h2>What you should know</h2>
+  <p>
+    I value depth over drama, clarity over confusion, and growth over ego.
+    I’m building myself — health, confidence, ambition — brick by brick.
+    <br><br>
+    I don’t rush people. I don’t play games.
+    If something grows here, it grows strong.
+  </p>
+</section>
+
+<!-- PHOTOS -->
+<section class="section">
+  <h2>Moments & Energy</h2>
+
+  <div class="grid">
+    <img src="images/sit.jpg">
+    <img src="images/portrait.jpg">
+    <img src="images/night.jpg">
+    <img src="images/glasses.jpg">
+    <img src="images/calm.jpg">
+  </div>
+</section>
+
+<!-- NATURE -->
+<section class="section">
+  <h2>Nature is not a hobby — it’s my language</h2>
+  <p>
+    I work with plants, spaces, and environments.
+    Green isn’t decoration for me — it’s grounding.
+  </p>
+
+  <div class="grid">
+    <img src="images/plants1.jpg">
+    <img src="images/plants2.jpg">
+    <img src="images/terrarium.jpg">
+  </div>
+</section>
+
+<!-- VALUES -->
+<section class="section">
+  <h2>What I value in a woman</h2>
+
+  <div class="values">
+    <div class="value">
+      <h3>Emotional maturity</h3>
+      <p>Knows herself. Communicates. Takes accountability.</p>
+    </div>
+    <div class="value">
+      <h3>Feminine strength</h3>
+      <p>Kind, playful, curious — not performative.</p>
+    </div>
+    <div class="value">
+      <h3>Loyalty</h3>
+      <p>Energy invested where it belongs.</p>
+    </div>
+    <div class="value">
+      <h3>Independent mind</h3>
+      <p>Educated, liberal, city-aware — but emotionally rooted.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<div class="footer">
+  This isn’t a pitch.  
+  If it resonates, that’s enough.
+</div>
+
+</body>
+</html>
